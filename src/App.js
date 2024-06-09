@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const stringsList = [
+  "Rameshwaram + Popsicles after!",
+  "Burma Burma + Polar Bear!",
+  "Chulha Chauki da dhaba + Lassi!",
+  "Walking around eating anything and everything!",
+  "Lucky Chan + Naturals Ice cream!"
+];
+
+const RandomStringGenerator = () => {
+  const [randomString, setRandomString] = useState('');
+
+  const generateRandomString = () => {
+    const randomIndex = Math.floor(Math.random() * stringsList.length);
+    setRandomString(stringsList[randomIndex] + "🎉");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>✨ Hi Sushmitha ✨</h1>
+      <p>{randomString}</p>
+      <button className="round-button" onClick={generateRandomString}>Click it and choose one destination</button>
     </div>
   );
-}
+};
 
-export default App;
+export default RandomStringGenerator;
