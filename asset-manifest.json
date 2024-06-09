@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SameerDump/static/css/main.ee5a6cc2.css",
+    "main.js": "/SameerDump/static/js/main.7fb694d8.js",
+    "static/js/453.b8924e4e.chunk.js": "/SameerDump/static/js/453.b8924e4e.chunk.js",
+    "index.html": "/SameerDump/index.html",
+    "main.ee5a6cc2.css.map": "/SameerDump/static/css/main.ee5a6cc2.css.map",
+    "main.7fb694d8.js.map": "/SameerDump/static/js/main.7fb694d8.js.map",
+    "453.b8924e4e.chunk.js.map": "/SameerDump/static/js/453.b8924e4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee5a6cc2.css",
+    "static/js/main.7fb694d8.js"
+  ]
+}
